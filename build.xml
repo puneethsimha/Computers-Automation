@@ -1,0 +1,53 @@
+<project xmlns:ivy="antlib:org.apache.ivy.ant" 
+	name="Web1" basedir=".">
+	<description>
+		Running TestNG Test 
+	</description>
+	<taskdef name="testng" classname="org.testng.TestNGAntTask">
+		<classpath location="${basedir}/lib/testng-6.7.jar" />
+	</taskdef>
+	<property name="src.dir" location="src" />
+	<property name="test.classes.dir" location="${basedir}/classes" />
+
+	<path id="classpath">
+		<fileset dir="${basedir}/lib" includes="**/*.jar"/>
+	</path>
+
+	<!-- Compile Java source from ${src.dir} and output it to ${test.classes.dir} -->
+	<target name="compile" description="compile source code">
+		<mkdir dir="${test.classes.dir}" />
+		<javac srcdir="${src.dir}" destdir="${test.classes.dir}"  debug="true" includeantruntime="false" classpathref="classpath" fork="true">
+		</javac>
+	</target>
+
+
+	<target name="run-regression-chrome" depends="compile">
+		<antcall target="runtests">
+			<param name="testng.suite.file" value="${basedir}/configuration/TestNG-Chrome.xml"/>
+		</antcall>
+	</target>
+	
+	<target name="run-regression-firefox" depends="compile">
+		<antcall target="runtests">
+			<param name="testng.suite.file" value="${basedir}/configuration/TestNG-Firefox.xml"/>
+		</antcall>
+	</target>
+	
+
+	<target name="runtests">
+		<echo message="TestNG suite file: ${testng.suite.file}"/>
+		<testng haltonfailure="true" verbose="10" useDefaultListeners="true" failureproperty="tests.failed">
+			<xmlfileset file="${testng.suite.file}" />
+			<classpath>
+				<path path="${test.classes.dir}"/>
+				<pathelement location="${basedir}/lib/testng-6.7.jar"/>
+				<pathelement location="${basedir}/lib/okio-1.14.1.jar"/>
+				<pathelement location="${basedir}/lib/okhttp-3.10.0.jar"/>
+				<pathelement location="${basedir}/lib/jcommander-1.48.jar"/>
+				<pathelement location="${basedir}/lib/guava-31.0.1-jre.jar"/>
+				<pathelement location="${basedir}/lib/commons-exec-1.3.jar"/>
+				<pathelement location="${basedir}/lib/client-combined-3.141.59.jar"/>
+			</classpath>
+		</testng>
+	</target>
+</project>

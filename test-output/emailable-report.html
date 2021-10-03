@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Regression Tests</td><td class="numi">20</td><td class="numi">20</td><td class="numi">0</td><td class="numi">0</td><td class="numi">363.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Regression Tests &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="20">org.mytests.Tests<td><a href="#m1"><b>checkIfComputersLinkTextIsPresent</b>  </a></td><td class="numi">1</td><td>1633219391862</td><td class="numi">775</td></tr><tr class="passedodd"><td><a href="#m2"><b>addComputerAndCheckByClickingNext</b>  </a></td><td class="numi">1</td><td>1633219392637</td><td class="numi">60004</td></tr><tr class="passedodd"><td><a href="#m3"><b>addAndSearchComputer</b>  </a></td><td class="numi">1</td><td>1633219452641</td><td class="numi">4416</td></tr><tr class="passedodd"><td><a href="#m4"><b>checkIfTableHeadersAreCorrect</b>  </a></td><td class="numi">1</td><td>1633219457057</td><td class="numi">177</td></tr><tr class="passedodd"><td><a href="#m5"><b>checkIfComputerCountMatchesTheNumberOfEntriesInTheTable</b>  </a></td><td class="numi">1</td><td>1633219457234</td><td class="numi">80213</td></tr><tr class="passedodd"><td><a href="#m6"><b>addComputerWithoutProvidingComputerName</b>  </a></td><td class="numi">1</td><td>1633219537447</td><td class="numi">2471</td></tr><tr class="passedodd"><td><a href="#m7"><b>addComputerWithBlankComputerName</b>  </a></td><td class="numi">1</td><td>1633219539918</td><td class="numi">2467</td></tr><tr class="passedodd"><td><a href="#m8"><b>addComputerWithNonASCIIComputerName</b>  </a></td><td class="numi">1</td><td>1633219542385</td><td class="numi">2942</td></tr><tr class="passedodd"><td><a href="#m9"><b>addComputerDetailsHitCancelAndSearchComputer</b>  </a></td><td class="numi">1</td><td>1633219545327</td><td class="numi">3106</td></tr><tr class="passedodd"><td><a href="#m10"><b>addComputerWithInvalidDateFormatForIntroduced</b>  </a></td><td class="numi">1</td><td>1633219548433</td><td class="numi">2510</td></tr><tr class="passedodd"><td><a href="#m11"><b>addComputerWithInvalidDateMonthForIntroduced</b>  </a></td><td class="numi">1</td><td>1633219550943</td><td class="numi">2485</td></tr><tr class="passedodd"><td><a href="#m12"><b>addComputerWithInvalidDateDayForIntroduced</b>  </a></td><td class="numi">1</td><td>1633219553428</td><td class="numi">2503</td></tr><tr class="passedodd"><td><a href="#m13"><b>addComputerWithInvalidDateYearForIntroduced</b>  </a></td><td class="numi">1</td><td>1633219555931</td><td class="numi">2514</td></tr><tr class="passedodd"><td><a href="#m14"><b>addComputerWithInvalidDateFormatForDiscontinued</b>  </a></td><td class="numi">1</td><td>1633219558446</td><td class="numi">2472</td></tr><tr class="passedodd"><td><a href="#m15"><b>addComputerWithInvalidDateMonthForDiscontinued</b>  </a></td><td class="numi">1</td><td>1633219560918</td><td class="numi">2475</td></tr><tr class="passedodd"><td><a href="#m16"><b>addComputerWithInvalidDateDayForDiscontinued</b>  </a></td><td class="numi">1</td><td>1633219563393</td><td class="numi">2484</td></tr><tr class="passedodd"><td><a href="#m17"><b>addComputerWithInvalidDateYearForDiscontinued</b>  </a></td><td class="numi">1</td><td>1633219565877</td><td class="numi">2499</td></tr><tr class="passedodd"><td><a href="#m18"><b>checkScrollingBack</b>  </a></td><td class="numi">1</td><td>1633219568377</td><td class="numi">162475</td></tr><tr class="passedodd"><td><a href="#m19"><b>checkAddAndDelete</b>  </a></td><td class="numi">1</td><td>1633219730852</td><td class="numi">6910</td></tr><tr class="passedodd"><td><a href="#m20"><b>checkAddAndUpdate</b>  </a></td><td class="numi">1</td><td>1633219737762</td><td class="numi">7870</td></tr>
+</table>
+<h1>Regression Tests</h1>
+<a id="m1"></a><h2>org.mytests.Tests:addComputerWithoutProvidingComputerName</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>org.mytests.Tests:addComputerWithNonASCIIComputerName</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>org.mytests.Tests:addComputerWithInvalidDateMonthForDiscontinued</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>org.mytests.Tests:checkScrollingBack</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>org.mytests.Tests:checkAddAndUpdate</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>org.mytests.Tests:checkIfComputersLinkTextIsPresent</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>org.mytests.Tests:addComputerWithInvalidDateFormatForIntroduced</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>org.mytests.Tests:addAndSearchComputer</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>org.mytests.Tests:addComputerDetailsHitCancelAndSearchComputer</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>org.mytests.Tests:checkIfComputerCountMatchesTheNumberOfEntriesInTheTable</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m11"></a><h2>org.mytests.Tests:addComputerWithInvalidDateMonthForIntroduced</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m12"></a><h2>org.mytests.Tests:addComputerWithInvalidDateDayForIntroduced</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m13"></a><h2>org.mytests.Tests:addComputerWithBlankComputerName</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m14"></a><h2>org.mytests.Tests:addComputerWithInvalidDateYearForIntroduced</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m15"></a><h2>org.mytests.Tests:checkAddAndDelete</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m16"></a><h2>org.mytests.Tests:addComputerWithInvalidDateDayForDiscontinued</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m17"></a><h2>org.mytests.Tests:addComputerWithInvalidDateFormatForDiscontinued</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m18"></a><h2>org.mytests.Tests:addComputerAndCheckByClickingNext</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m19"></a><h2>org.mytests.Tests:checkIfTableHeadersAreCorrect</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m20"></a><h2>org.mytests.Tests:addComputerWithInvalidDateYearForDiscontinued</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

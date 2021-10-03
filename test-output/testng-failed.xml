@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegressionSuite]" verbose="10">
+  <parameter name="browser" value="Chrome"/>
+  <test name="Regression Tests(failed)" preserve-order="true">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="org.mytests.Tests">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="beforeClass"/>
+          <include name="addComputerDetailsHitCancelAndSearchComputer"/>
+        </methods>
+      </class> <!-- org.mytests.Tests -->
+    </classes>
+  </test> <!-- Regression Tests(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->

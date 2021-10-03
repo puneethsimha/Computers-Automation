@@ -1,0 +1,35 @@
+<suite name="RegressionSuite" verbose="2">
+	<test name="Regression Tests">
+	<parameter name="browser" value="Chrome"/>
+		<classes>
+			<class name="org.mytests.Tests">
+				<methods>
+					<include name="checkIfComputersLinkTextIsPresent" />
+					<include name="addComputerAndCheckByClickingNext" />
+					<include name="addAndSearchComputer" />
+					<include name="checkIfSearchBoxIsPresent" />
+					<include name="checkIfSearchButtonIsPresent" />
+					<include name="checkIfAddComputersLinkTextIsPresent" />
+					<include name="checkIfTableHeadersAreCorrect" />
+					<include name="checkIfComputerCountMatchesTheNumberOfEntriesInTheTable" />
+					<include name="addComputerWithoutProvidingComputerName" />
+					<include name="addComputerWithBlankComputerName" />
+					<include name="addComputerWithNonASCIIComputerName" />
+					<include name="addComputerDetailsHitCancelAndSearchComputer"/>
+					<include name="addComputerWithInvalidDateFormatForIntroduced"/>
+					<include name="addComputerWithInvalidDateMonthForIntroduced"/>
+					<include name="addComputerWithInvalidDateDayForIntroduced"/>
+					<include name="addComputerWithInvalidDateYearForIntroduced"/>
+					<include name="addComputerWithInvalidDateFormatForDiscontinued"/>
+					<include name="addComputerWithInvalidDateMonthForDiscontinued"/>
+					<include name="addComputerWithInvalidDateDayForDiscontinued"/>
+					<include name="addComputerWithInvalidDateYearForDiscontinued"/>
+					<include name="checkIfAllTheComputerNamesInTheTableAreInAlphabeticalOrder"/>
+					<include name="checkScrollingBack"/>
+					<include name="checkAddAndDelete"/>
+					<include name="checkAddAndUpdate"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

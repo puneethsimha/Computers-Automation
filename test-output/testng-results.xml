@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="20" passed="20" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-10-03T00:03:02Z" name="RegressionSuite" finished-at="2021-10-03T00:09:06Z" duration-ms="363285">
+    <groups>
+    </groups>
+    <test started-at="2021-10-03T00:03:02Z" name="Regression Tests" finished-at="2021-10-03T00:09:06Z" duration-ms="363285">
+      <class name="org.mytests.Tests">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:org.mytests.Tests@6ddf90b0]" started-at="2021-10-02T17:03:02Z" name="beforeClass" finished-at="2021-10-02T17:03:11Z" duration-ms="9120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="checkIfComputersLinkTextIsPresent()[pri:0, instance:org.mytests.Tests@6ddf90b0]" started-at="2021-10-02T17:03:11Z" name="checkIfComputersLinkTextIsPresent" finished-at="2021-10-02T17:03:12Z" duration-ms="775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkIfComputersLinkTextIsPresent -->
+        <test-method signature="addComputerAndCheckByClickingNext()[pri:0, instance:org.mytests.Tests@6ddf90b0]" started-at="2021-10-02T17:03:12Z" name="addComputerAndCheckByClickingNext" finished-at="2021-10-02T17:04:12Z" duration-ms="60004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addComputerAndCheckByClickingNext -->
+        <test-method signature="addAndSearchComputer()[pri:0, instance:org.mytests.Tests@6ddf90b0]" started-at="2021-10-02T17:04:12Z" name="addAndSearchComputer" finished-at="2021-10-02T17:04:17Z" duration-ms="4416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAndSearchComputer -->
+        <test-method signature="checkIfTableHeadersAreCorrect()[pri:0, instance:org.mytests.Tests@6ddf90b0]" started-at="2021-10-02T17:04:17Z" name="checkIfTableHeadersAreCorrect" finished-at="2021-10-02T17:04:17Z" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkIfTableHeadersAreCorrect -->
+        <test-method signature="checkIfComputerCountMatchesTheNumberOfEntriesInTheTable()[pri:0, instance:org.mytests.Tests@6ddf90b0]" started-at="2021-10-02T17:04:17Z" name="checkIfComputerCountMatchesTheNumberOfEntriesInTheTable" finished-at="2021-10-02T17:05:37Z" duration-ms="80213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkIfComputerCountMatchesTheNumberOfEntriesInTheTable -->
+        <test-method signature="addComputerWithoutProvidingComputerName()[pri:0, instance:org.mytests.Tests@6ddf90b0]" started-at="2021-10-02T17:05:37Z" name="addComputerWithoutProvidingComputerName" finished-at="2021-10-02T17:05:39Z" duration-ms="2471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addComputerWithoutProvidingComputerName -->
+        <test-method signature="addComputerWithBlankComputerName()[pri:0, instance:org.mytests.Tests@6ddf90b0]" started-at="2021-10-02T17:05:39Z" name="addComputerWithBlankComputerName" finished-at="2021-10-02T17:05:42Z" duration-ms="2467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addComputerWithBlankComputerName -->
+        <test-method signature="addComputerWithNonASCIIComputerName()[pri:0, instance:org.mytests.Tests@6ddf90b0]" started-at="2021-10-02T17:05:42Z" name="addComputerWithNonASCIIComputerName" finished-at="2021-10-02T17:05:45Z" duration-ms="2942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addComputerWithNonASCIIComputerName -->
+        <test-method signature="addComputerDetailsHitCancelAndSearchComputer()[pri:0, instance:org.mytests.Tests@6ddf90b0]" started-at="2021-10-02T17:05:45Z" name="addComputerDetailsHitCancelAndSearchComputer" finished-at="2021-10-02T17:05:48Z" duration-ms="3106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addComputerDetailsHitCancelAndSearchComputer -->
+        <test-method signature="addComputerWithInvalidDateFormatForIntroduced()[pri:0, instance:org.mytests.Tests@6ddf90b0]" started-at="2021-10-02T17:05:48Z" name="addComputerWithInvalidDateFormatForIntroduced" finished-at="2021-10-02T17:05:50Z" duration-ms="2510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addComputerWithInvalidDateFormatForIntroduced -->
+        <test-method signature="addComputerWithInvalidDateMonthForIntroduced()[pri:0, instance:org.mytests.Tests@6ddf90b0]" started-at="2021-10-02T17:05:50Z" name="addComputerWithInvalidDateMonthForIntroduced" finished-at="2021-10-02T17:05:53Z" duration-ms="2485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addComputerWithInvalidDateMonthForIntroduced -->
+        <test-method signature="addComputerWithInvalidDateDayForIntroduced()[pri:0, instance:org.mytests.Tests@6ddf90b0]" started-at="2021-10-02T17:05:53Z" name="addComputerWithInvalidDateDayForIntroduced" finished-at="2021-10-02T17:05:55Z" duration-ms="2503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addComputerWithInvalidDateDayForIntroduced -->
+        <test-method signature="addComputerWithInvalidDateYearForIntroduced()[pri:0, instance:org.mytests.Tests@6ddf90b0]" started-at="2021-10-02T17:05:55Z" name="addComputerWithInvalidDateYearForIntroduced" finished-at="2021-10-02T17:05:58Z" duration-ms="2514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addComputerWithInvalidDateYearForIntroduced -->
+        <test-method signature="addComputerWithInvalidDateFormatForDiscontinued()[pri:0, instance:org.mytests.Tests@6ddf90b0]" started-at="2021-10-02T17:05:58Z" name="addComputerWithInvalidDateFormatForDiscontinued" finished-at="2021-10-02T17:06:00Z" duration-ms="2472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addComputerWithInvalidDateFormatForDiscontinued -->
+        <test-method signature="addComputerWithInvalidDateMonthForDiscontinued()[pri:0, instance:org.mytests.Tests@6ddf90b0]" started-at="2021-10-02T17:06:00Z" name="addComputerWithInvalidDateMonthForDiscontinued" finished-at="2021-10-02T17:06:03Z" duration-ms="2475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addComputerWithInvalidDateMonthForDiscontinued -->
+        <test-method signature="addComputerWithInvalidDateDayForDiscontinued()[pri:0, instance:org.mytests.Tests@6ddf90b0]" started-at="2021-10-02T17:06:03Z" name="addComputerWithInvalidDateDayForDiscontinued" finished-at="2021-10-02T17:06:05Z" duration-ms="2484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addComputerWithInvalidDateDayForDiscontinued -->
+        <test-method signature="addComputerWithInvalidDateYearForDiscontinued()[pri:0, instance:org.mytests.Tests@6ddf90b0]" started-at="2021-10-02T17:06:05Z" name="addComputerWithInvalidDateYearForDiscontinued" finished-at="2021-10-02T17:06:08Z" duration-ms="2499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addComputerWithInvalidDateYearForDiscontinued -->
+        <test-method signature="checkScrollingBack()[pri:0, instance:org.mytests.Tests@6ddf90b0]" started-at="2021-10-02T17:06:08Z" name="checkScrollingBack" finished-at="2021-10-02T17:08:50Z" duration-ms="162475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkScrollingBack -->
+        <test-method signature="checkAddAndDelete()[pri:0, instance:org.mytests.Tests@6ddf90b0]" started-at="2021-10-02T17:08:50Z" name="checkAddAndDelete" finished-at="2021-10-02T17:08:57Z" duration-ms="6910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAndDelete -->
+        <test-method signature="checkAddAndUpdate()[pri:0, instance:org.mytests.Tests@6ddf90b0]" started-at="2021-10-02T17:08:57Z" name="checkAddAndUpdate" finished-at="2021-10-02T17:09:05Z" duration-ms="7870" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAndUpdate -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:org.mytests.Tests@6ddf90b0]" started-at="2021-10-02T17:09:05Z" name="cleanUp" finished-at="2021-10-02T17:09:06Z" duration-ms="388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- org.mytests.Tests -->
+    </test> <!-- Regression Tests -->
+  </suite> <!-- RegressionSuite -->
+</testng-results>

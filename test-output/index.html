@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG new reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-RegressionSuite" class="navigator-link">
+              <span class="suite-name border-passed">RegressionSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-RegressionSuite" class="navigator-link ">
+                    <span>TestNG-Firefox.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-RegressionSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-RegressionSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-RegressionSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-RegressionSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-RegressionSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-RegressionSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods,   20 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-RegressionSuite" class="hide-methods passed suite-RegressionSuite"> (hide)</a> <!-- hide-methods passed suite-RegressionSuite -->
+                      <a href="#" panel-name="suite-RegressionSuite" class="show-methods passed suite-RegressionSuite"> (show)</a> <!-- show-methods passed suite-RegressionSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-RegressionSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.mytests.Tests" class="method navigator-link" hash-for-method="addAndSearchComputer">addAndSearchComputer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.mytests.Tests" class="method navigator-link" hash-for-method="addComputerAndCheckByClickingNext">addComputerAndCheckByClickingNext</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.mytests.Tests" class="method navigator-link" hash-for-method="addComputerDetailsHitCancelAndSearchComputer">addComputerDetailsHitCancelAndSearchComputer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.mytests.Tests" class="method navigator-link" hash-for-method="addComputerWithBlankComputerName">addComputerWithBlankComputerName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.mytests.Tests" class="method navigator-link" hash-for-method="addComputerWithInvalidDateDayForDiscontinued">addComputerWithInvalidDateDayForDiscontinued</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.mytests.Tests" class="method navigator-link" hash-for-method="addComputerWithInvalidDateDayForIntroduced">addComputerWithInvalidDateDayForIntroduced</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.mytests.Tests" class="method navigator-link" hash-for-method="addComputerWithInvalidDateFormatForDiscontinued">addComputerWithInvalidDateFormatForDiscontinued</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.mytests.Tests" class="method navigator-link" hash-for-method="addComputerWithInvalidDateFormatForIntroduced">addComputerWithInvalidDateFormatForIntroduced</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.mytests.Tests" class="method navigator-link" hash-for-method="addComputerWithInvalidDateMonthForDiscontinued">addComputerWithInvalidDateMonthForDiscontinued</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.mytests.Tests" class="method navigator-link" hash-for-method="addComputerWithInvalidDateMonthForIntroduced">addComputerWithInvalidDateMonthForIntroduced</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.mytests.Tests" class="method navigator-link" hash-for-method="addComputerWithInvalidDateYearForDiscontinued">addComputerWithInvalidDateYearForDiscontinued</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.mytests.Tests" class="method navigator-link" hash-for-method="addComputerWithInvalidDateYearForIntroduced">addComputerWithInvalidDateYearForIntroduced</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.mytests.Tests" class="method navigator-link" hash-for-method="addComputerWithNonASCIIComputerName">addComputerWithNonASCIIComputerName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.mytests.Tests" class="method navigator-link" hash-for-method="addComputerWithoutProvidingComputerName">addComputerWithoutProvidingComputerName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.mytests.Tests" class="method navigator-link" hash-for-method="checkAddAndDelete">checkAddAndDelete</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.mytests.Tests" class="method navigator-link" hash-for-method="checkAddAndUpdate">checkAddAndUpdate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.mytests.Tests" class="method navigator-link" hash-for-method="checkIfComputerCountMatchesTheNumberOfEntriesInTheTable">checkIfComputerCountMatchesTheNumberOfEntriesInTheTable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.mytests.Tests" class="method navigator-link" hash-for-method="checkIfComputersLinkTextIsPresent">checkIfComputersLinkTextIsPresent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.mytests.Tests" class="method navigator-link" hash-for-method="checkIfTableHeadersAreCorrect">checkIfTableHeadersAreCorrect</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.mytests.Tests" class="method navigator-link" hash-for-method="checkScrollingBack">checkScrollingBack</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-RegressionSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-RegressionSuite" class="panel RegressionSuite">
+          <div class="suite-RegressionSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.mytests.Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addAndSearchComputer">
+                  </a> <!-- addAndSearchComputer -->
+                  <span class="method-name">addAndSearchComputer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addComputerAndCheckByClickingNext">
+                  </a> <!-- addComputerAndCheckByClickingNext -->
+                  <span class="method-name">addComputerAndCheckByClickingNext</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addComputerDetailsHitCancelAndSearchComputer">
+                  </a> <!-- addComputerDetailsHitCancelAndSearchComputer -->
+                  <span class="method-name">addComputerDetailsHitCancelAndSearchComputer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addComputerWithBlankComputerName">
+                  </a> <!-- addComputerWithBlankComputerName -->
+                  <span class="method-name">addComputerWithBlankComputerName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addComputerWithInvalidDateDayForDiscontinued">
+                  </a> <!-- addComputerWithInvalidDateDayForDiscontinued -->
+                  <span class="method-name">addComputerWithInvalidDateDayForDiscontinued</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addComputerWithInvalidDateDayForIntroduced">
+                  </a> <!-- addComputerWithInvalidDateDayForIntroduced -->
+                  <span class="method-name">addComputerWithInvalidDateDayForIntroduced</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addComputerWithInvalidDateFormatForDiscontinued">
+                  </a> <!-- addComputerWithInvalidDateFormatForDiscontinued -->
+                  <span class="method-name">addComputerWithInvalidDateFormatForDiscontinued</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addComputerWithInvalidDateFormatForIntroduced">
+                  </a> <!-- addComputerWithInvalidDateFormatForIntroduced -->
+                  <span class="method-name">addComputerWithInvalidDateFormatForIntroduced</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addComputerWithInvalidDateMonthForDiscontinued">
+                  </a> <!-- addComputerWithInvalidDateMonthForDiscontinued -->
+                  <span class="method-name">addComputerWithInvalidDateMonthForDiscontinued</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addComputerWithInvalidDateMonthForIntroduced">
+                  </a> <!-- addComputerWithInvalidDateMonthForIntroduced -->
+                  <span class="method-name">addComputerWithInvalidDateMonthForIntroduced</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addComputerWithInvalidDateYearForDiscontinued">
+                  </a> <!-- addComputerWithInvalidDateYearForDiscontinued -->
+                  <span class="method-name">addComputerWithInvalidDateYearForDiscontinued</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addComputerWithInvalidDateYearForIntroduced">
+                  </a> <!-- addComputerWithInvalidDateYearForIntroduced -->
+                  <span class="method-name">addComputerWithInvalidDateYearForIntroduced</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addComputerWithNonASCIIComputerName">
+                  </a> <!-- addComputerWithNonASCIIComputerName -->
+                  <span class="method-name">addComputerWithNonASCIIComputerName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addComputerWithoutProvidingComputerName">
+                  </a> <!-- addComputerWithoutProvidingComputerName -->
+                  <span class="method-name">addComputerWithoutProvidingComputerName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkAddAndDelete">
+                  </a> <!-- checkAddAndDelete -->
+                  <span class="method-name">checkAddAndDelete</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkAddAndUpdate">
+                  </a> <!-- checkAddAndUpdate -->
+                  <span class="method-name">checkAddAndUpdate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkIfComputerCountMatchesTheNumberOfEntriesInTheTable">
+                  </a> <!-- checkIfComputerCountMatchesTheNumberOfEntriesInTheTable -->
+                  <span class="method-name">checkIfComputerCountMatchesTheNumberOfEntriesInTheTable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkIfComputersLinkTextIsPresent">
+                  </a> <!-- checkIfComputersLinkTextIsPresent -->
+                  <span class="method-name">checkIfComputersLinkTextIsPresent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkIfTableHeadersAreCorrect">
+                  </a> <!-- checkIfTableHeadersAreCorrect -->
+                  <span class="method-name">checkIfTableHeadersAreCorrect</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkScrollingBack">
+                  </a> <!-- checkScrollingBack -->
+                  <span class="method-name">checkScrollingBack</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-passed -->
+        </div> <!-- panel RegressionSuite -->
+        <div panel-name="test-xml-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/puneeth/eclipse-workspace/Web1/configuration/TestNG-Firefox.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;RegressionSuite&quot; verbose=&quot;10&quot;&gt;
+  &lt;test name=&quot;Regression Tests&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.mytests.Tests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;checkIfComputersLinkTextIsPresent&quot;/&gt;
+          &lt;include name=&quot;addComputerAndCheckByClickingNext&quot;/&gt;
+          &lt;include name=&quot;addAndSearchComputer&quot;/&gt;
+          &lt;include name=&quot;checkIfSearchBoxIsPresent&quot;/&gt;
+          &lt;include name=&quot;checkIfSearchButtonIsPresent&quot;/&gt;
+          &lt;include name=&quot;checkIfAddComputersLinkTextIsPresent&quot;/&gt;
+          &lt;include name=&quot;checkIfTableHeadersAreCorrect&quot;/&gt;
+          &lt;include name=&quot;checkIfComputerCountMatchesTheNumberOfEntriesInTheTable&quot;/&gt;
+          &lt;include name=&quot;addComputerWithoutProvidingComputerName&quot;/&gt;
+          &lt;include name=&quot;addComputerWithBlankComputerName&quot;/&gt;
+          &lt;include name=&quot;addComputerWithNonASCIIComputerName&quot;/&gt;
+          &lt;include name=&quot;addComputerDetailsHitCancelAndSearchComputer&quot;/&gt;
+          &lt;include name=&quot;addComputerWithInvalidDateFormatForIntroduced&quot;/&gt;
+          &lt;include name=&quot;addComputerWithInvalidDateMonthForIntroduced&quot;/&gt;
+          &lt;include name=&quot;addComputerWithInvalidDateDayForIntroduced&quot;/&gt;
+          &lt;include name=&quot;addComputerWithInvalidDateYearForIntroduced&quot;/&gt;
+          &lt;include name=&quot;addComputerWithInvalidDateFormatForDiscontinued&quot;/&gt;
+          &lt;include name=&quot;addComputerWithInvalidDateMonthForDiscontinued&quot;/&gt;
+          &lt;include name=&quot;addComputerWithInvalidDateDayForDiscontinued&quot;/&gt;
+          &lt;include name=&quot;addComputerWithInvalidDateYearForDiscontinued&quot;/&gt;
+          &lt;include name=&quot;checkIfAllTheComputerNamesInTheTableAreInAlphabeticalOrder&quot;/&gt;
+          &lt;include name=&quot;checkScrollingBack&quot;/&gt;
+          &lt;include name=&quot;checkAddAndDelete&quot;/&gt;
+          &lt;include name=&quot;checkAddAndUpdate&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- org.mytests.Tests --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regression Tests --&gt;
+&lt;/suite&gt; &lt;!-- RegressionSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Regression Tests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_RegressionSuite');
+function tableData_RegressionSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'checkScrollingBack')
+data.setCell(0, 2, 'org.mytests.Tests')
+data.setCell(0, 3, 162475);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'checkIfComputerCountMatchesTheNumberOfEntriesInTheTable')
+data.setCell(1, 2, 'org.mytests.Tests')
+data.setCell(1, 3, 80213);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addComputerAndCheckByClickingNext')
+data.setCell(2, 2, 'org.mytests.Tests')
+data.setCell(2, 3, 60004);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checkAddAndUpdate')
+data.setCell(3, 2, 'org.mytests.Tests')
+data.setCell(3, 3, 7870);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkAddAndDelete')
+data.setCell(4, 2, 'org.mytests.Tests')
+data.setCell(4, 3, 6910);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addAndSearchComputer')
+data.setCell(5, 2, 'org.mytests.Tests')
+data.setCell(5, 3, 4416);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'addComputerDetailsHitCancelAndSearchComputer')
+data.setCell(6, 2, 'org.mytests.Tests')
+data.setCell(6, 3, 3106);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'addComputerWithNonASCIIComputerName')
+data.setCell(7, 2, 'org.mytests.Tests')
+data.setCell(7, 3, 2942);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'addComputerWithInvalidDateYearForIntroduced')
+data.setCell(8, 2, 'org.mytests.Tests')
+data.setCell(8, 3, 2514);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'addComputerWithInvalidDateFormatForIntroduced')
+data.setCell(9, 2, 'org.mytests.Tests')
+data.setCell(9, 3, 2510);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'addComputerWithInvalidDateDayForIntroduced')
+data.setCell(10, 2, 'org.mytests.Tests')
+data.setCell(10, 3, 2503);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'addComputerWithInvalidDateYearForDiscontinued')
+data.setCell(11, 2, 'org.mytests.Tests')
+data.setCell(11, 3, 2499);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'addComputerWithInvalidDateMonthForIntroduced')
+data.setCell(12, 2, 'org.mytests.Tests')
+data.setCell(12, 3, 2485);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'addComputerWithInvalidDateDayForDiscontinued')
+data.setCell(13, 2, 'org.mytests.Tests')
+data.setCell(13, 3, 2484);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'addComputerWithInvalidDateMonthForDiscontinued')
+data.setCell(14, 2, 'org.mytests.Tests')
+data.setCell(14, 3, 2475);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'addComputerWithInvalidDateFormatForDiscontinued')
+data.setCell(15, 2, 'org.mytests.Tests')
+data.setCell(15, 3, 2472);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'addComputerWithoutProvidingComputerName')
+data.setCell(16, 2, 'org.mytests.Tests')
+data.setCell(16, 3, 2471);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'addComputerWithBlankComputerName')
+data.setCell(17, 2, 'org.mytests.Tests')
+data.setCell(17, 3, 2467);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'checkIfComputersLinkTextIsPresent')
+data.setCell(18, 2, 'org.mytests.Tests')
+data.setCell(18, 3, 775);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'checkIfTableHeadersAreCorrect')
+data.setCell(19, 2, 'org.mytests.Tests')
+data.setCell(19, 3, 177);
+window.suiteTableData['RegressionSuite']= { tableData: data, tableDiv: 'times-div-RegressionSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-RegressionSuite">
+              </div> <!-- times-div-RegressionSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">org.mytests.Tests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">checkIfTextIsPresent</span>
+                <br/>
+                <span class="ignored-method-name">checkIfAllTheComputerNamesInTheTableAreInAlphabeticalOrderWhileScrollingForward</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.mytests.Tests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(Firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">checkIfComputersLinkTextIsPresent</span>
+                <span class="method-start">9122 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addComputerAndCheckByClickingNext</span>
+                <span class="method-start">9897 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addAndSearchComputer</span>
+                <span class="method-start">69901 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkIfTableHeadersAreCorrect</span>
+                <span class="method-start">74317 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkIfComputerCountMatchesTheNumberOfEntriesInTheTable</span>
+                <span class="method-start">74494 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addComputerWithoutProvidingComputerName</span>
+                <span class="method-start">154707 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addComputerWithBlankComputerName</span>
+                <span class="method-start">157178 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addComputerWithNonASCIIComputerName</span>
+                <span class="method-start">159645 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addComputerDetailsHitCancelAndSearchComputer</span>
+                <span class="method-start">162587 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addComputerWithInvalidDateFormatForIntroduced</span>
+                <span class="method-start">165693 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addComputerWithInvalidDateMonthForIntroduced</span>
+                <span class="method-start">168203 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addComputerWithInvalidDateDayForIntroduced</span>
+                <span class="method-start">170688 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addComputerWithInvalidDateYearForIntroduced</span>
+                <span class="method-start">173191 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addComputerWithInvalidDateFormatForDiscontinued</span>
+                <span class="method-start">175706 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addComputerWithInvalidDateMonthForDiscontinued</span>
+                <span class="method-start">178178 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addComputerWithInvalidDateDayForDiscontinued</span>
+                <span class="method-start">180653 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addComputerWithInvalidDateYearForDiscontinued</span>
+                <span class="method-start">183137 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkScrollingBack</span>
+                <span class="method-start">185637 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkAddAndDelete</span>
+                <span class="method-start">348112 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkAddAndUpdate</span>
+                <span class="method-start">355022 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">362892 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
